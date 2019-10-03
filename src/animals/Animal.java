@@ -5,7 +5,7 @@ public abstract class Animal
     static int maxId = 0;
     int id;
     String name;
-    int yearDiscovered;
+    Integer yearDiscovered;
 
     public Animal()
     {   
@@ -13,7 +13,7 @@ public abstract class Animal
         id = maxId;
     }
 
-    public Animal(String name, int yearDiscovered)
+    public Animal(String name, Integer yearDiscovered)
     {
         maxId++;
         id = maxId;
@@ -37,12 +37,12 @@ public abstract class Animal
         return name;
     }
 
-    public void setYearDiscovered(int yearDiscovered)
+    public void setYearDiscovered(Integer yearDiscovered)
     {
         this.yearDiscovered = yearDiscovered;
     }
 
-    public int getYearDiscovered()
+    public Integer getYearDiscovered()
     {
         return yearDiscovered;
     }
